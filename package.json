@@ -1,17 +1,14 @@
 {
-  "name": "cineverse-movie-review-platform",
+  "name": "movie-review-server",
   "version": "1.0.0",
-  "description": "A modern platform to browse movies, submit reviews, and give ratings",
+  "type": "module",
+  "main": "server.js",
   "scripts": {
-    "install:all": "cd server && npm install && cd ../client && npm install",
-    "dev:server": "cd server && node --watch server.js",
-    "dev:client": "cd client && npm run dev",
-    "dev": "node dev-runner.js",
-    "build": "cd client && npm run build",
-    "start": "cd server && node server.js"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
-  "devDependencies": {
-    "pptxgenjs": "^4.0.1",
-    "puppeteer-core": "^25.16.0"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
   }
 }
